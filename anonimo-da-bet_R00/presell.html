@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presell - Anônimo da Bet</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="assets/scripts/form.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+</head>
+<body>
+    <div id="matrix-rain"></div>
+    <header>
+        <img class="logo" src="assets/images/logo.png" alt="Anônimo da Bet">
+        <h1 class="glitch" data-text="Hidden Layer Media">Anônimo da Bet</h1>
+    </header>
+
+    <div class="content-wrapper">
+
+        <main>
+            <section id="home">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-button"></span>
+                        <span class="terminal-button"></span>
+                        <span class="terminal-button"></span>
+                    </div>
+                    <div class="terminal-body">
+                        <p>> Bem vindo(a) ao Anônimo da Bet</p>
+                        <p>> Descobrindo a verdade abaixo da superfície</p>
+                        <p>> <span class="cursor">|</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="data-visualization">
+                <h2 class="cyber-header">Responda as questões abaixo e descubra se você está qualificado(a) a ter acesso a essa tecnologia</h2>
+                <div id="questionnaire-section">
+                    <div class="question-container">
+                        <p class="question-text">Pergunta 1 de 5: Qual é a sua idade?</p>
+                        <div class="options">
+                            <button class="option-btn" data-next="2">18+</button>
+                            <button class="option-btn" data-next="2">35+</button>
+                        </div>
+                    </div>
+                    <div class="question-container">
+                        <p class="question-text">Pergunta 2 de 5: Você já está cansado de perder e quer aprender a ganhar?</p>
+                        <div class="options">
+                            <button class="option-btn" data-next="3">Sim</button>
+                            <button class="option-btn" data-next="3">Claro</button>
+                        </div>
+                    </div>
+                    <div class="question-container">
+                        <p class="question-text">Pergunta 3 de 5: Quer ter acesso a uma tecnologia que te da a possibilidade de ganhar 7x o valor?</p>
+                        <div class="options">
+                            <button class="option-btn" data-next="4">Sim</button>
+                            <button class="option-btn" data-next="4">Não</button>
+                        </div>
+                    </div>
+                    <div class="question-container">
+                        <p class="question-text">Pergunta 4 de 5: Você está ciente que essa tecnologia não será liberada para todos?</p>
+                        <div class="options">
+                            <button class="option-btn" data-next="5">Sim</button>
+                            <button class="option-btn" data-next="5">Não</button>
+                        </div>
+                    </div>
+                    <div class="question-container">
+                        <p class="question-text">Pergunta 5 de 5: Você está ciente que essa tecnologia em breve não será mais gratuita?</p>
+                        <div class="options">
+                            <button class="option-btn" data-next="loading">Sim</button>
+                            <button class="option-btn" data-next="loading">Não</button>
+                        </div>
+                    </div>
+                    <div id="loading-container" style="display: none;">
+                        <div class="loading-bar-container">
+                            <div class="loading-bar"></div>
+                        </div>
+                        <p>Carregando...</p>
+                    </div>
+                    <div id="end-container" style="display: none;">
+                        <p>Suas respostas foram validadas.<br>Você foi selecionado para a próxima fase, clique no Botão Abaixo!</p>
+                        <p></p>
+                        <button id="final-button">Acessar Inteligência Artificial<br>(clique aqui)</button>
+                    </div>
+                    <script>
+                        document.getElementById('final-button').addEventListener('click', function() {
+                            window.location.href = 'vsl.html';
+                        });
+                    </script>
+                </div>
+            </section>
+            
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Anônimo da Bet | A verdade está aqui</p>
+        <p style="font-size: 8px;">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se a vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</p>
+    </footer>
+
+    <script src="assets/scripts/matrix.js"></script>
+</body>
+</html>
