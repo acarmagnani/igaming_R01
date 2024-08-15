@@ -4,6 +4,6 @@ function button_click(eventCategory, eventLabel, buttonName, buttonLocation, red
         'event_label': eventLabel,
         'button_name': buttonName,
         'button_location': buttonLocation,
-        'redirect_url': redirectUrl
+        'destination': destinationLabel
     });
 }
