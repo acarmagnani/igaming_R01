@@ -304,7 +304,7 @@ footer {
 }
 
 .button-whatsapp i {
-    font-size: 36px; /* Match the font size of the text */
+    font-size: 25px; /* Match the font size of the text */
     margin-right: 10px; /* Space between the icon and text */
     height: 100%; /* Ensures the icon is the same height as the text */
     display: flex;
