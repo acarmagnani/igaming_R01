@@ -4,6 +4,3 @@ function trackWhatsAppClick(eventLabel) {
       'event_label': eventLabel
     });
 }
-
-
-
