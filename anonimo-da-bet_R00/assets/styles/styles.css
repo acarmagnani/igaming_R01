@@ -169,11 +169,8 @@ footer {
 /* FORMS */
 
 #questionnaire-section {
-    padding: 2rem;
-
     color: #fff;
-    max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
     border-radius: 8px;
 
     width: clamp(200px, 90vw, 600px);
