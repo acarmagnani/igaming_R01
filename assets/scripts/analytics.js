@@ -6,9 +6,4 @@ function button_click(eventCategory, eventLabel, buttonName, buttonLocation, red
         'button_location': buttonLocation,
         'redirect_url': redirectUrl
     });
-
-    // Optionally handle the redirect if needed
-    setTimeout(function() {
-      window.location.href = redirectUrl;
-    }, 300); // Adjust the delay if necessary
-  }
+}
