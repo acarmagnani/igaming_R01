@@ -43,7 +43,6 @@ header {
 }
 
 .glitch {
-    font-size: 2.5rem;
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
@@ -51,6 +50,10 @@ header {
     text-shadow: 0.05em 0 0 var(--primary-color), -0.05em -0.025em 0 var(--secondary-color),
                  -0.025em 0.05em 0 #ff00ff;
     animation: glitch 500ms infinite;
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 @keyframes glitch {
@@ -88,12 +91,30 @@ main {
     padding: 2rem;
 }
 
+#data-visualization {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .cyber-header {
     font-size: 1.5rem;
     color: var(--text-color);
     text-transform: uppercase;
     margin-bottom: 1rem;
     border-bottom: 2px solid var(--secondary-color);
+    text-align: center;
+
+    width: clamp(300px, 90vw, 800px);
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .terminal {
@@ -102,6 +123,8 @@ main {
     border-radius: 10px;
     padding: 1rem;
     margin-bottom: 2rem;
+
+    width: clamp(300px, 90vw, 800px);
 }
 
 .terminal-header {
@@ -146,11 +169,13 @@ footer {
 
 #questionnaire-section {
     padding: 2rem;
-    background-color: #1a1a1a;
+
     color: #fff;
     max-width: 600px;
     margin: 0 auto;
     border-radius: 8px;
+
+    width: clamp(200px, 90vw, 600px);
 }
 
 .question-container {
@@ -176,6 +201,8 @@ footer {
     cursor: pointer;
     font-family: 'Share Tech Mono', monospace;
     transition: background-color 0.3s ease;
+
+    font-size: 1rem;
 }
 
 .option-btn:hover {
@@ -191,6 +218,8 @@ footer {
     cursor: pointer;
     font-family: 'Share Tech Mono', monospace;
     transition: background-color 0.3s ease;
+
+    font-size: 1rem;
 }
 
 #final-button:hover {
@@ -201,9 +230,10 @@ footer {
     width: 100%;
     background-color: #333;
     border-radius: 5px;
-    margin: 20px auto;
+    margin: auto;
     overflow: hidden;
     height: 20px;
+
 }
 
 .loading-bar {
@@ -238,6 +268,257 @@ footer {
 
 .logo {
     height: auto;
-    width: 150px;
+    width: 100px;
     align-self: center;
+}
+
+/* VIDEO */
+
+.video {
+    width: 100%; /* The .video container will take up the full width of its parent */
+    max-width: 100%; /* Prevents the video from exceeding the width of the .video container */
+    height: auto; /* The height will scale proportionally to the width */
+    overflow: hidden; /* Ensures the video is fully contained inside .video */
+}
+
+.video video {
+    width: 100%; /* The video will take up the full width of the .video container */
+    height: auto; /* The height will scale proportionally to the width */
+    display: block; /* Ensures there are no unwanted margins or paddings */
+    object-fit: cover; /* Ensures the video covers the entire .video container without distortion */
+}
+
+.button-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    animation: neon 1s infinite;
+    margin: 30px 0px;
+}
+
+.button-whatsapp i {
+    font-size: 36px; /* Match the font size of the text */
+    margin-right: 10px; /* Space between the icon and text */
+    height: 100%; /* Ensures the icon is the same height as the text */
+    display: flex;
+    align-items: center;
+}
+
+
+@keyframes neon {
+    0% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+    }
+    50% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 30px #00ff00;
+    }
+    100% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+    }
+}
+
+
+/* FACEBOOK */
+
+.facebook-body{
+    margin:20px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.pull-right{
+    float:right;
+}
+.pull-left{
+    float:left;
+}
+#fbcomment{
+    background:#fff;
+    border: 1px solid #dddfe2;
+    border-radius: 3px;
+    color: #4b4f56;
+    padding:50px;
+}
+.header_comment{
+    font-size: 14px;
+    overflow: hidden;
+    border-bottom: 1px solid #e9ebee;
+    line-height: 25px;
+    margin-bottom: 24px;
+    padding: 10px 0;
+}
+.sort_title{
+    color: #4b4f56;
+}
+.sort_by{
+    background-color: #f5f6f7;
+    color: #4b4f56;
+    line-height: 22px;
+    cursor: pointer;
+    vertical-align: top;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 4px;
+    justify-content: center;
+    border-radius: 2px;
+    border: 1px solid #ccd0d5;
+}
+.count_comment{
+    font-weight: 600;
+}
+.body_comment{
+    padding: 0 8px;
+    font-size: 14px;
+    display: block;
+    line-height: 25px;
+    word-break: break-word;
+}
+.avatar_comment{
+    display: block;
+}
+.avatar_comment img{
+    height: 48px;
+    width: 48px;
+}
+.box_comment{
+    display: block;
+    position: relative;
+    line-height: 1.358;
+    word-break: break-word;
+    border: 1px solid #d3d6db;
+    word-wrap: break-word;
+    background: #fff;
+    box-sizing: border-box;
+    cursor: text;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+.box_comment textarea{
+    min-height: 40px;
+    padding: 12px 8px;
+    width: 100%;
+    border: none;
+    resize: none;
+}
+.box_comment textarea:focus{
+    outline: none !important;
+}
+.box_comment .box_post{
+    border-top: 1px solid #d3d6db;
+    background: #f5f6f7;
+    padding: 8px;
+    display: block;
+    overflow: hidden;
+}
+.box_comment label{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #90949c;
+    line-height: 22px;
+}
+.box_comment button{
+    margin-left:8px;
+    background-color: #4267b2;
+    border: 1px solid #4267b2;
+    color: #fff;
+    text-decoration: none;
+    line-height: 22px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+}
+.box_comment button:hover{
+    background-color: #29487d;
+    border-color: #29487d;
+}
+.box_comment .cancel{
+    margin-left:8px;
+    background-color: #f5f6f7;
+    color: #4b4f56;
+    text-decoration: none;
+    line-height: 22px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    border-color: #ccd0d5;
+}
+.box_comment .cancel:hover{
+    background-color: #d0d0d0;
+    border-color: #ccd0d5;
+}
+.box_comment img{
+    height:16px;
+    width:16px;
+}
+.box_result{
+    margin-top: 24px;
+}
+.box_result .result_comment h4{
+    font-weight: 600;
+    white-space: nowrap;
+    color: #365899;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.358;
+    margin:0;
+}
+.box_result .result_comment{
+    display:block;
+    overflow:hidden;
+    padding: 0;
+}
+.child_replay{
+    border-left: 1px dotted #d3d6db;
+    margin-top: 12px;
+    list-style: none;
+    padding:0 0 0 8px
+}
+.reply_comment{
+    margin:12px 0;
+}
+.box_result .result_comment p{
+    margin: 4px 0;
+    text-align:justify;
+}
+.box_result .result_comment .tools_comment{
+    font-size: 12px;
+    line-height: 1.358;
+}
+.box_result .result_comment .tools_comment a{
+    color: #4267b2;
+    cursor: pointer;
+    text-decoration: none;
+}
+.box_result .result_comment .tools_comment span{
+    color: #90949c;
+}
+.body_comment .show_more, .body_comment .show_less{
+    background: #3578e5;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 24px;
+    padding: 12px;
+    text-shadow: none;
+    width: 100%;
+    font-weight:bold;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 2px;
 }

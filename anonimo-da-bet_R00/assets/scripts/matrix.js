@@ -15,7 +15,7 @@ function createMatrixRain() {
     }
   
     function draw() {
-        ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.35)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
   
         ctx.fillStyle = '#0F0';
@@ -60,5 +60,5 @@ function createMatrixRain() {
             header.style.animation = 'none';
         });
     });
-  });
+});
   

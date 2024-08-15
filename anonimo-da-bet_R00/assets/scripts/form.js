@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => {
                     loadingContainer.style.display = 'none';
                     finalButtonContainer.style.display = 'block';
-                }, 4000); // 4 seconds
+                }, 4500); // 4 seconds
             } else {
                 questions[currentQuestionIndex].classList.add('active');
             }
