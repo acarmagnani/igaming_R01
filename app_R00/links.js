@@ -1,11 +1,11 @@
 const links = {
-    plataform: "https://afiliados.startbet.io/visit/?bta=45588&brand=startbet",
+    plataform: "https://go.aff.elisa.bet/pbs688xc",
     kirvano: "#",
     menu1: "#",
     menu2: "#",
     menu3: "#",
     menu4: "https://chat.whatsapp.com/JKkVmYneL4TB3FDk8Gknme",
-    footerText: "&copy; 2024 Hack Ninja. <br>All rights reserved.",
+    footerText: "&copy; 2024 Anônimo da Bet. <br>All rights reserved.",
     sectionLink: "#"
 };
 
