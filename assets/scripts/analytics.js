@@ -1,7 +1,6 @@
-function button_click(eventCategory, eventLabel, buttonName, buttonLocation, destinationLabel) {
-    gtag('event', 'Button Click', {
+function button_click(eventName, eventCategory, buttonName, buttonLocation, destinationLabel) {
+    gtag('event', eventName, {
         'event_category': eventCategory,
-        'event_label': eventLabel,
         'button_name': buttonName,
         'button_location': buttonLocation,
         'destination': destinationLabel,
