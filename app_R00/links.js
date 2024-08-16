@@ -21,11 +21,16 @@ function updateElements() {
         }
     }
 
-    // Update the button to open the link in a new tab
+    // Update the button to track click and open the link in a new tab
     const button = document.getElementById('link-plataforma');
     if (button) {
-        button.onclick = function() {
-            window.open(links.plataform, '_blank');
+        const existingOnClick = button.onclick;  // Store the existing onclick function
+
+        button.onclick = function(event) {
+            if (existingOnClick) {
+                existingOnClick.call(this, event);  // Call the existing onclick function
+            }
+            window.open(links.plataform, '_blank');  // Add new functionality
         };
     }
 
@@ -34,5 +39,6 @@ function updateElements() {
         footer.innerHTML = links.footerText;
     }
 }
+
 
 window.onload = updateElements;
